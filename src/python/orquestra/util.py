@@ -1,7 +1,8 @@
 from typing import Iterable, Optional, List, Tuple
 import copy
 import numpy as np
-#from scipy.linalg import expm
+import json
+from scipy.linalg import expm
 
 def swap_forward(iterable_item: Iterable,
                  starting_index: Optional[int] = 0):
