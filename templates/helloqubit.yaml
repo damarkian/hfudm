@@ -43,5 +43,5 @@ spec:
     # This section is where output artifacts are listed. They must be listed here, or else they will get deleted when the template completes. They must be under the `app` directory in order to be saved.
     outputs:
       artifacts:
-      - name: hello-qubit-output
+      - name: myoutput
         path: /app/helloqubit.json
