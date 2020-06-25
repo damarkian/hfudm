@@ -26,9 +26,10 @@ spec:
         path: /app/main.py
         raw:
           data: |
+            import json
             from orquestra import util
             from orquestra.util import hiddenhello
-            import json
+            
             hiddenhello()
 
     # This section is where output artifacts are listed. They must be listed here, or else they will get deleted when the template completes. They must be under the `app` directory in order to be saved.
