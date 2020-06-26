@@ -26,7 +26,7 @@ spec:
         path: /app/main.py
         raw:
           data: |
-            from orquestra import helloqubit
+            from orquestra.helloworld import *
 
             helloqubit()
 
