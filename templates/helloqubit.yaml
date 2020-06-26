@@ -27,9 +27,8 @@ spec:
         raw:
           data: |
             from orquestra.helloworld import *
-
-            helloqubit()
-
+            [c1, r1] = helloqubit()
+            outputjson(c1, r1, '/app/helloqubit.json')
 
     # This section is where output artifacts are listed. They must be listed here, or else they will get deleted when the template completes. They must be under the `app` directory in order to be saved.
     outputs:
