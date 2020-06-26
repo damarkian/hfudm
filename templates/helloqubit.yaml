@@ -26,19 +26,10 @@ spec:
         path: /app/main.py
         raw:
           data: |
-            import json
-            import sys
-            from io import StringIO
             from orquestra import helloqubit
-            stdout = StringIO()
 
             helloqubit()
 
-            myoutput = {}
-            myoutput["stdout"] = stdout
-            myoutput["schema"] = "stdout"
-            with open('helloqubit.json', 'w') as f:
-              f.write(json.dumps(myoutput))
 
     # This section is where output artifacts are listed. They must be listed here, or else they will get deleted when the template completes. They must be under the `app` directory in order to be saved.
     outputs:
