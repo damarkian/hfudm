@@ -26,6 +26,8 @@ spec:
         path: /app/main.py
         raw:
           data: |
+            import json
+            import cirq
             from orquestra.helloworld import *
             [c1, r1] = helloqubit()
             outputjson(c1, r1, '/app/helloqubit.json')
@@ -33,5 +35,5 @@ spec:
     # This section is where output artifacts are listed. They must be listed here, or else they will get deleted when the template completes. They must be under the `app` directory in order to be saved.
     outputs:
       artifacts:
-      - name: myoutput
+      - name: helloworld
         path: /app/helloqubit.json
