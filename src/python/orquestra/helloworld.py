@@ -30,7 +30,8 @@ def hellocircuit():
 
 def outputjson(_circuit, _result, jsonfile):
     _jsondict = {}
-    _jsondict['circuit'] = str(_circuit)
-    _jsondict['result'] = str(_result)
+    _jsondict["circuit"] = str(_circuit)
+    _jsondict["result"] = str(_result)
+    _jsondict["schema"] = "helloworld-circuit-result"
     with open(jsonfile, 'w') as f:
         f.write(json.dumps(_jsondict))
