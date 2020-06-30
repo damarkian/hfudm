@@ -1,5 +1,6 @@
 import json
 import numpy as np
+import sympy
 import cirq
 
 from openfermioncirq.experiments.hfvqe.gradient_hf import rhf_func_generator
