@@ -13,6 +13,17 @@ from openfermioncirq.experiments.hfvqe.analysis import (compute_opdm,
 from openfermioncirq.experiments.hfvqe.third_party.higham import fixed_trace_positive_projection
 from openfermioncirq.experiments.hfvqe.molecular_example_odd_qubits import make_h3_2_5
 
+
+def helloh1():
+    rhf_objective, molecule, parameters, obi, tbi = make_h3_2_5()
+    ansatz, energy, gradient = rhf_func_generator(rhf_objective)
+    jsondict = {}
+    jsondict["comment"] = "Done"
+    jsondict["schema"] = "h3test-circuit-result"
+    return jsondict
+
+
+
 def helloh3():
     # Generate the input files, set up quantum resources, and set up the OpdmFunctional to make measurements. 
 
